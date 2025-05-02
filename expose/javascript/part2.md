@@ -62,3 +62,4 @@ f. `true === Boolean(2)`
 
 17. The result of calling `modifyArray([1,2,3], doSomething)` is `[2, 4, 6]`. This happens because the `modifyArray` function takes an array and a callback function, then loops through the array and applies the callback to each element. The callback `doSomething` simply doubles the number, so each element in `[1, 2, 3]` becomes `[2, 4, 6]` after being processed. The new array with the modified values is returned.
 
+19. The output of the code will be `1`, `4`, `3`, and then `2`. The synchronous `console.log(1)` and `console.log(4)` execute immediately, printing `1` and `4`. The first `setTimeout` with a delay of `0` logs `3` after the current operations, and the second `setTimeout`, with a delay of `1000ms`, logs `2` after 1 second.
