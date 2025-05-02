@@ -59,3 +59,6 @@ f. `true === Boolean(2)`
 15. == allows type conversion
     
 === requires both value and type to match
+
+17. The result of calling `modifyArray([1,2,3], doSomething)` is `[2, 4, 6]`. This happens because the `modifyArray` function takes an array and a callback function, then loops through the array and applies the callback to each element. The callback `doSomething` simply doubles the number, so each element in `[1, 2, 3]` becomes `[2, 4, 6]` after being processed. The new array with the modified values is returned.
+
